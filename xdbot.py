@@ -1,6 +1,7 @@
 import discord
 import asyncio
 
+token = input()
 client = discord.Client()
 
 @client.event
@@ -16,4 +17,4 @@ async def on_message(message):
         await client.send_message(message.channel, 'ecks dee')
 
 
-client.run('MjMyMTg1ODI2NjAyMjU0MzM4.DEidAg.EO1nigROPgw1r4WpkA7r2PAXdLc')
+client.run(token)
